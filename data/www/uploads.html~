@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+</head> 
+<body onload="get_files()">
+<script type="module" src="app.js"></script>
+<h1>Uploads</h1>
+<p>
+<button onclick="window.location='index.html'">STATUS</button>
+</p>
+<p>
+<form method="post" enctype="multipart/form-data" action="upload_firmware">
+  <input type="file" id="firmware" name="filename">
+  <input type="submit" value="Upload Firmware">
+</form>
+<form method="post" enctype="multipart/form-data" action="upload_www">
+  <input type="file" id="www" name="www">
+  <input type="submit" value="Upload WWW">
+</form>
+</p>
+<p id="p_files"></p>
+</body>
+</html>
